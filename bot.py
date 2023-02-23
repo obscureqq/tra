@@ -2,8 +2,8 @@ from subprocess import check_output
 import telebot
 import time
 
-bot = telebot.TeleBot("6158419008:AAE7iHfbonsfKLtOZD6SW98Nvqfjs9_wdLk")#токен бота
-user_id = 652735087 #id вашего аккаунта
+bot = telebot.TeleBot("TOKEN")#токен бота
+user_id = ID #id вашего аккаунта
 @bot.message_handler(content_types=["text"])
 def main(message):
     if (user_id == message.chat.id):
